@@ -1,0 +1,41 @@
+---
+import '../styles/globals.css';
+import Navbar from './Navbar.astro';
+import Footer from './Footer.astro';
+const { title } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} | IronLink Technologies</title><meta name="description" content="IronLink Technologies offers secure, scalable IT solutions including cloud migration, cybersecurity, and managed services." />
+  <meta name="keywords" content="IT consulting, managed IT, cybersecurity, cloud migration, El Paso IT, IronLink Technologies" />
+  <meta name="author" content="IronLink Technologies" />
+
+  <!-- Open Graph for social previews -->
+  <meta property="og:title" content="IronLink Technologies" />
+  <meta property="og:description" content="Secure. Scalable. Smart. Your IT ally for the modern era." />
+  <meta property="og:image" content="/logo.png" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Analytics Dummy Script (Replace with real ID when ready) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-IRON123456"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-IRON123456', {
+    page_path: window.location.pathname,
+  });
+</script>
+</head>
+<body>
+  <Navbar />
+  <main class="min-h-screen">
+    <slot />
+  </main>
+  <Footer />
+</body>
+</html>

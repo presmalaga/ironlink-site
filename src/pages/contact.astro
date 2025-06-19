@@ -1,20 +1,32 @@
+<!-- Contact Page: src/pages/contact.astro -->
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Layout from '../components/Layout.astro';
 ---
+<Layout title="Contact">
+  <section class="bg-primary text-white text-center py-20 px-6">
+    <h1 class="text-5xl font-bold mb-4">Connect with Confidence</h1>
+    <p class="text-xl max-w-2xl mx-auto">Whether you're ready to launch a project or just have questions — our team is here to help.</p>
+  </section>
 
-<BaseLayout>
-  <section class="max-w-xl mx-auto pt-20 pb-12 text-center">
-    <h2 class="text-4xl font-extrabold text-ironlink-accent mb-6">Contact Us</h2>
-    <form class="space-y-4" netlify>
-      <input class="w-full p-3 rounded bg-ironlink-dark text-ironlink-light border border-ironlink-accent" type="text" name="name" placeholder="Your Name" required />
-      <input class="w-full p-3 rounded bg-ironlink-dark text-ironlink-light border border-ironlink-accent" type="email" name="email" placeholder="Your Email" required />
-      <textarea class="w-full p-3 rounded bg-ironlink-dark text-ironlink-light border border-ironlink-accent" name="message" rows="5" placeholder="How can we help you?" required></textarea>
-      <button class="bg-ironlink-accent text-ironlink-dark px-8 py-3 rounded-full font-bold hover:bg-ironlink-blue hover:text-ironlink-light transition">Send Message</button>
-    </form>
-    <div class="mt-8">
-      <div>📧 support@ironlinktech.com</div>
-      <div>📞 (915) 555-TECH</div>
-      <div>🌐 Serving El Paso, TX & surrounding areas</div>
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-2xl mx-auto bg-gray-100 p-8 rounded shadow">
+      <form class="space-y-6">
+        <div>
+          <label class="block text-sm font-medium mb-1">Name</label>
+          <input type="text" name="name" placeholder="Full Name" class="w-full border border-gray-300 p-3 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" name="email" placeholder="Email Address" class="w-full border border-gray-300 p-3 rounded" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Message</label>
+          <textarea name="message" rows="5" placeholder="Your Message" class="w-full border border-gray-300 p-3 rounded"></textarea>
+        </div>
+        <div class="text-right">
+          <button type="submit" class="bg-accent text-primary px-6 py-3 rounded font-bold hover:opacity-90">Send Message</button>
+        </div>
+      </form>
     </div>
   </section>
-</BaseLayout>
+</Layout>

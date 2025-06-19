@@ -1,20 +1,14 @@
----
-const links = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Contact", href: "/contact" },
-];
----
-
-<nav class="flex items-center justify-between px-8 py-4 bg-ironlink-blue shadow-lg">
-  <div class="flex items-center space-x-2">
-    <img src="/ironlink-logo.png" alt="IronLink Logo" class="h-10 w-10" />
-    <span class="font-black text-xl tracking-tight text-ironlink-accent">IronLink</span>
-  </div>
-  <div class="flex space-x-8">
-    {links.map(link => (
-      <a href={link.href} class="font-semibold hover:text-ironlink-accent transition-colors">{link.name}</a>
-    ))}
+<nav class="bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="/" class="flex items-center space-x-2">
+      <img src="/logo.png" alt="IronLink logo" class="h-8 w-8" />
+      <span class="text-xl font-bold text-primary">IronLink</span>
+    </a>
+    <ul class="flex space-x-6 text-gray-700 text-sm font-medium">
+      <li><a href="/">Home</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
   </div>
 </nav>

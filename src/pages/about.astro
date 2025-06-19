@@ -1,20 +1,35 @@
+<!-- About Page: src/pages/about.astro -->
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Layout from '../components/Layout.astro';
 ---
-
-<BaseLayout>
-  <section class="max-w-3xl mx-auto pt-20 pb-12">
-    <h2 class="text-4xl font-extrabold text-ironlink-accent mb-4">About IronLink</h2>
-    <p class="mb-4 text-lg">
-      IronLink Technologies was founded by a veteran (that’s me) and dedicated dad on a mission: <strong>make IT safe, personal, and reliable</strong> for El Paso & beyond. We bring discipline, heart, and know-how to every client. From compliance headaches to cyber defense, you get expert care with a human touch.
-    </p>
-    <ul class="mb-4 space-y-2">
-      <li>🟦 20+ years combined IT & Security experience</li>
-      <li>🟦 Combat-tested, family-driven values</li>
-      <li>🟦 Trusted by medical, legal, and local businesses</li>
-    </ul>
-    <p>
-      We don’t believe in shortcuts—just results, trust, and a little dad-joke humor.
-    </p>
+<Layout title="About">
+  <section class="bg-primary text-white text-center py-20 px-6">
+    <h1 class="text-5xl font-bold mb-4">Your Trusted Tech Ally</h1>
+    <p class="text-xl max-w-3xl mx-auto">Founded by military veterans and tech professionals, IronLink Technologies brings discipline, reliability, and innovation to every project.</p>
   </section>
-</BaseLayout>
+
+  <section class="bg-white py-20 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 text-gray-700">
+      <div>
+        <h3 class="text-2xl font-semibold text-primary mb-2">💼 Our Background</h3>
+        <p>From battlefield communications to Fortune 500 systems, our founders have navigated some of the toughest technical and operational landscapes.</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold text-primary mb-2">🌎 Our Vision</h3>
+        <p>We believe secure, smart, and sustainable IT should be accessible to every business — no matter the size.</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold text-primary mb-2">🔍 Core Values</h3>
+        <ul class="list-disc list-inside">
+          <li>Integrity in everything we deliver</li>
+          <li>Client-first service approach</li>
+          <li>Excellence through continuous learning</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold text-primary mb-2">🚀 What Sets Us Apart</h3>
+        <p>We combine military-grade discipline with enterprise-grade expertise to build IT ecosystems that stand the test of time.</p>
+      </div>
+    </div>
+  </section>
+</Layout>

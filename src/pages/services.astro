@@ -1,29 +1,39 @@
+<!-- Services Page: src/pages/services.astro -->
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Layout from '../components/Layout.astro';
 ---
-
-<BaseLayout>
-  <section class="max-w-4xl mx-auto pt-20 pb-12">
-    <h2 class="text-4xl font-extrabold text-ironlink-accent mb-6">Our Services</h2>
-    <ul class="grid md:grid-cols-2 gap-6">
-      <li class="bg-ironlink-blue bg-opacity-80 p-6 rounded-lg shadow hover:scale-105 transition">
-        <span class="text-2xl">✅</span> HIPAA-Compliant IT Support
-      </li>
-      <li class="bg-ironlink-blue bg-opacity-80 p-6 rounded-lg shadow hover:scale-105 transition">
-        <span class="text-2xl">✅</span> Network & Wi-Fi Setup
-      </li>
-      <li class="bg-ironlink-blue bg-opacity-80 p-6 rounded-lg shadow hover:scale-105 transition">
-        <span class="text-2xl">✅</span> Cybersecurity & Antivirus
-      </li>
-      <li class="bg-ironlink-blue bg-opacity-80 p-6 rounded-lg shadow hover:scale-105 transition">
-        <span class="text-2xl">✅</span> Remote & On-Site Support
-      </li>
-      <li class="bg-ironlink-blue bg-opacity-80 p-6 rounded-lg shadow hover:scale-105 transition">
-        <span class="text-2xl">✅</span> Backup & Recovery
-      </li>
-      <li class="bg-ironlink-blue bg-opacity-80 p-6 rounded-lg shadow hover:scale-105 transition">
-        <span class="text-2xl">✅</span> Tech Consultations & Upgrades
-      </li>
-    </ul>
+<Layout title="Services">
+  <section class="bg-primary text-white text-center py-20 px-6">
+    <h1 class="text-5xl font-bold mb-4">Comprehensive IT Solutions</h1>
+    <p class="text-xl max-w-3xl mx-auto">We don’t just fix problems — we engineer success. Explore our full stack of secure, scalable IT services designed for real-world impact.</p>
   </section>
-</BaseLayout>
+
+  <section class="bg-white py-20 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div class="p-6 bg-gray-100 rounded shadow">
+        <h2 class="text-xl font-semibold text-primary mb-2">🔧 Managed IT Services</h2>
+        <p class="text-sm text-gray-700">From device provisioning to 24/7 monitoring, we provide end-to-end support so your team can focus on driving growth.</p>
+      </div>
+      <div class="p-6 bg-gray-100 rounded shadow">
+        <h2 class="text-xl font-semibold text-primary mb-2">☁️ Cloud Migration & Strategy</h2>
+        <p class="text-sm text-gray-700">Modernize your infrastructure with intelligent cloud adoption frameworks, built for speed, scale, and security.</p>
+      </div>
+      <div class="p-6 bg-gray-100 rounded shadow">
+        <h2 class="text-xl font-semibold text-primary mb-2">🛡️ Cybersecurity & Compliance</h2>
+        <p class="text-sm text-gray-700">Stay ahead of threats with tailored assessments, zero trust architectures, and actionable compliance roadmaps.</p>
+      </div>
+      <div class="p-6 bg-gray-100 rounded shadow">
+        <h2 class="text-xl font-semibold text-primary mb-2">📊 IT Strategy & Consulting</h2>
+        <p class="text-sm text-gray-700">Align technology with your business objectives through data-driven consulting and scalable implementation planning.</p>
+      </div>
+      <div class="p-6 bg-gray-100 rounded shadow">
+        <h2 class="text-xl font-semibold text-primary mb-2">🔐 Identity & Access Management</h2>
+        <p class="text-sm text-gray-700">Protect users and data with IAM strategies, including MFA, SSO, and privileged access control systems.</p>
+      </div>
+      <div class="p-6 bg-gray-100 rounded shadow">
+        <h2 class="text-xl font-semibold text-primary mb-2">🔄 Business Continuity Planning</h2>
+        <p class="text-sm text-gray-700">We help you prepare, adapt, and recover — with resilient disaster recovery plans and proven incident response frameworks.</p>
+      </div>
+    </div>
+  </section>
+</Layout>

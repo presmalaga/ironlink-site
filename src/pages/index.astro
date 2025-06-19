@@ -1,37 +1,45 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Layout from '../components/Layout.astro';
 ---
-
-<BaseLayout>
-  <section class="max-w-4xl mx-auto pt-20 pb-16 text-center">
-    <img src="/ironlink-logo.png" alt="IronLink Logo" class="mx-auto mb-8 w-32 h-32" />
-    <h1 class="text-5xl font-black mb-4 text-ironlink-accent drop-shadow-lg">
-      IronLink Technologies
-    </h1>
-    <p class="text-xl mb-8 text-ironlink-light">
-      Modern IT & Cybersecurity. Veteran Integrity.<br/>
-      Local Precision. Get protected by the best. 🛡️
-    </p>
-    <a href="/contact" class="inline-block bg-ironlink-accent text-ironlink-dark px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-ironlink-blue hover:text-ironlink-light transition">
-      Schedule Your Free Security Audit
-    </a>
+<Layout title="Home">
+  <!-- Hero -->
+  <section class="bg-primary text-white text-center py-24 px-6">
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Smarter IT. Stronger Businesses.</h1>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto">At IronLink, we help you modernize, secure, and scale—faster than ever before.</p>
+    <a href="/services" class="mt-6 inline-block bg-accent text-primary font-bold px-6 py-3 rounded-full">Explore Services</a>
   </section>
 
-  <section class="max-w-5xl mx-auto my-16 grid md:grid-cols-3 gap-8 text-center">
-    <div>
-      <div class="text-3xl mb-2">🔒</div>
-      <h3 class="font-bold text-ironlink-accent mb-2">Cybersecurity</h3>
-      <p>Defend your business with ironclad solutions. HIPAA, ransomware, and all threats—handled.</p>
-    </div>
-    <div>
-      <div class="text-3xl mb-2">⚡</div>
-      <h3 class="font-bold text-ironlink-accent mb-2">Fast, Local IT</h3>
-      <p>Same-day support for El Paso and region. On-site & remote fixes, network magic, and smiles.</p>
-    </div>
-    <div>
-      <div class="text-3xl mb-2">🪖</div>
-      <h3 class="font-bold text-ironlink-accent mb-2">Veteran-Owned</h3>
-      <p>Integrity, precision, and grit. Your mission—our mission. Protecting you, always.</p>
+  <!-- Features -->
+  <section class="bg-white text-center py-20 px-6">
+    <h2 class="text-3xl font-bold mb-12">What We Deliver</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">💡 Strategy & Planning</h3>
+        <p class="text-sm text-gray-600">Roadmaps and insights tailored to your business model.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">🛡️ Cybersecurity</h3>
+        <p class="text-sm text-gray-600">Shield your data and reputation with expert guidance.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">☁️ Cloud Solutions</h3>
+        <p class="text-sm text-gray-600">Modernize infrastructure with secure, scalable cloud tech.</p>
+      </div>
     </div>
   </section>
-</BaseLayout>
+
+  <!-- Insights -->
+  <section class="bg-[#f4f6fa] py-16 px-6">
+    <h2 class="text-2xl text-center font-bold text-primary mb-10">Insights & Innovation</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+        <h4 class="text-lg font-semibold mb-2">📈 How to Scale IT Securely</h4>
+        <p class="text-sm text-gray-700">Best practices for building scalable, compliant systems.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+        <h4 class="text-lg font-semibold mb-2">🔒 Top 5 Security Trends for SMBs</h4>
+        <p class="text-sm text-gray-700">Stay ahead of attackers with these crucial insights.</p>
+      </div>
+    </div>
+  </section>
+</Layout>
