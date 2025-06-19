@@ -1,10 +1,35 @@
+<!-- Blog Page: src/pages/blog.astro -->
 ---
 import Layout from '../components/Layout.astro';
 ---
-<Layout title="Blog">
-  <h1 class="text-3xl font-bold text-primary mb-4">Tech Insights</h1>
-  <ul class="space-y-4 text-sm">
-    <li><a href="#" class="text-secondary hover:underline">🔒 Top 5 Cybersecurity Practices</a></li>
-    <li><a href="#" class="text-secondary hover:underline">☁️ Cloud Migration Best Practices</a></li>
-  </ul>
+<Layout title="Insights">
+  <section class="bg-primary text-white text-center py-20 px-6">
+    <h1 class="text-5xl font-bold mb-4">Tech Insights & Thought Leadership</h1>
+    <p class="text-xl max-w-3xl mx-auto">Stay ahead of the curve with our expert takes on technology trends, threats, and tactics.</p>
+  </section>
+
+  <section class="bg-white py-20 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+      <article class="bg-gray-100 p-6 rounded shadow hover:shadow-md transition">
+        <h2 class="text-xl font-semibold text-primary mb-2">🔐 5 Essential Cybersecurity Practices in 2025</h2>
+        <p class="text-sm text-gray-700">The top techniques SMBs need now to stay secure — firewalls are just the start.</p>
+        <a href="#" class="text-accent font-semibold mt-2 inline-block">Read More →</a>
+      </article>
+      <article class="bg-gray-100 p-6 rounded shadow hover:shadow-md transition">
+        <h2 class="text-xl font-semibold text-primary mb-2">☁️ Should You Move to a Multi-Cloud Strategy?</h2>
+        <p class="text-sm text-gray-700">We break down when it's worth it, when it's not, and how to prepare.</p>
+        <a href="#" class="text-accent font-semibold mt-2 inline-block">Read More →</a>
+      </article>
+      <article class="bg-gray-100 p-6 rounded shadow hover:shadow-md transition">
+        <h2 class="text-xl font-semibold text-primary mb-2">🚀 The IronLink Incident Response Checklist</h2>
+        <p class="text-sm text-gray-700">When a breach happens, here’s what we do in the first 30 minutes — and what you should too.</p>
+        <a href="#" class="text-accent font-semibold mt-2 inline-block">Read More →</a>
+      </article>
+      <article class="bg-gray-100 p-6 rounded shadow hover:shadow-md transition">
+        <h2 class="text-xl font-semibold text-primary mb-2">📊 IT Budget Planning for CEOs</h2>
+        <p class="text-sm text-gray-700">Smart spending doesn’t mean cutting corners — it means knowing where to invest.</p>
+        <a href="#" class="text-accent font-semibold mt-2 inline-block">Read More →</a>
+      </article>
+    </div>
+  </section>
 </Layout>

@@ -1,10 +1,31 @@
+<!-- Case Studies Page: src/pages/case-studies.astro -->
 ---
 import Layout from '../components/Layout.astro';
 ---
 <Layout title="Case Studies">
-  <h1 class="text-3xl font-bold text-primary mb-4">Case Studies</h1>
-  <ul class="space-y-4 text-sm">
-    <li><strong>Retail Chain Modernization 🏬</strong> — Improved uptime 95% with cloud-first overhaul.</li>
-    <li><strong>Healthcare Compliance 🏥</strong> — Passed HIPAA audit after full security review.</li>
-  </ul>
+  <section class="bg-primary text-white text-center py-20 px-6">
+    <h1 class="text-5xl font-bold mb-4">Proven Results. Real Impact.</h1>
+    <p class="text-xl max-w-2xl mx-auto">See how IronLink Technologies has transformed businesses through smart, secure IT solutions.</p>
+  </section>
+
+  <section class="bg-white py-20 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+      <div class="bg-gray-100 p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-primary mb-2">🏬 Retail Chain Revamp</h3>
+        <p class="text-sm text-gray-700">Rebuilt network infrastructure for 14 locations, cut downtime by 70%, and enabled real-time POS tracking across the board.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-primary mb-2">🏥 Healthcare HIPAA Readiness</h3>
+        <p class="text-sm text-gray-700">Performed full security audit for a regional clinic system — cleared audit and earned HIPAA certification in under 30 days.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-primary mb-2">🏢 City-Wide Cloud Migration</h3>
+        <p class="text-sm text-gray-700">Moved El Paso-based government department to secure Azure cloud setup. Improved speed, security, and uptime by 300%.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded shadow">
+        <h3 class="text-2xl font-semibold text-primary mb-2">📡 Veteran Services Collaboration</h3>
+        <p class="text-sm text-gray-700">Built a secure hybrid-cloud communications system for a nonprofit veterans agency, including remote access and encrypted messaging.</p>
+      </div>
+    </div>
+  </section>
 </Layout>
