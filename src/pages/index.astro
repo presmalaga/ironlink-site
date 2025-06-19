@@ -1,45 +1,62 @@
+<!-- Home Page: src/pages/index.astro -->
 ---
 import Layout from '../components/Layout.astro';
 ---
-<Layout title="Home">
-  <!-- Hero -->
-  <section class="bg-primary text-white text-center py-24 px-6">
-    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Smarter IT. Stronger Businesses.</h1>
-    <p class="text-lg md:text-xl max-w-2xl mx-auto">At IronLink, we help you modernize, secure, and scale—faster than ever before.</p>
-    <a href="/services" class="mt-6 inline-block bg-accent text-primary font-bold px-6 py-3 rounded-full">Explore Services</a>
+<Layout title="IronLink Technologies">
+  <section class="bg-gradient-to-r from-[#0f2d42] to-[#2c5e91] text-white text-center py-28 px-6">
+    <h1 class="text-5xl font-extrabold mb-6">Secure. Scalable. Built for What’s Next.</h1>
+    <p class="text-xl max-w-2xl mx-auto mb-8 text-white/90">We engineer IT solutions that evolve with your business — from compliance to cloud to cybersecurity.</p>
+    <div class="flex justify-center gap-6">
+      <a href="/contact" class="bg-white text-[#0f2d42] font-bold py-3 px-6 rounded-lg hover:bg-gray-200 transition">Let’s Talk</a>
+      <a href="/services" class="bg-transparent border border-white text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-[#0f2d42] transition">Explore Services</a>
+    </div>
   </section>
 
-  <!-- Features -->
-  <section class="bg-white text-center py-20 px-6">
-    <h2 class="text-3xl font-bold mb-12">What We Deliver</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div>
-        <h3 class="text-xl font-semibold mb-2">💡 Strategy & Planning</h3>
-        <p class="text-sm text-gray-600">Roadmaps and insights tailored to your business model.</p>
+  <section class="bg-[#edf3f8] py-24 px-6">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold text-[#0f2d42] mb-4">Our Core Solutions</h2>
+      <p class="text-lg text-gray-700">Purpose-built for scale, security, and simplicity.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-10 text-left">
+      <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+        <h3 class="text-xl font-bold text-[#0f2d42] mb-2">🛡️ Cybersecurity</h3>
+        <p class="text-gray-600 text-sm">SIEM, endpoint protection, compliance frameworks, and incident response planning tailored to your risk model.</p>
       </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2">🛡️ Cybersecurity</h3>
-        <p class="text-sm text-gray-600">Shield your data and reputation with expert guidance.</p>
+      <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+        <h3 class="text-xl font-bold text-[#0f2d42] mb-2">☁️ Cloud Architecture</h3>
+        <p class="text-gray-600 text-sm">Migration, automation, hybrid cloud support, and cost-optimized scaling with AWS, Azure, and GCP.</p>
       </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2">☁️ Cloud Solutions</h3>
-        <p class="text-sm text-gray-600">Modernize infrastructure with secure, scalable cloud tech.</p>
+      <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+        <h3 class="text-xl font-bold text-[#0f2d42] mb-2">🧠 IT Strategy</h3>
+        <p class="text-gray-600 text-sm">Fractional CTO services, digital transformation roadmaps, and vendor negotiations to protect your bottom line.</p>
       </div>
     </div>
   </section>
 
-  <!-- Insights -->
-  <section class="bg-[#f4f6fa] py-16 px-6">
-    <h2 class="text-2xl text-center font-bold text-primary mb-10">Insights & Innovation</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-        <h4 class="text-lg font-semibold mb-2">📈 How to Scale IT Securely</h4>
-        <p class="text-sm text-gray-700">Best practices for building scalable, compliant systems.</p>
-      </div>
-      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-        <h4 class="text-lg font-semibold mb-2">🔒 Top 5 Security Trends for SMBs</h4>
-        <p class="text-sm text-gray-700">Stay ahead of attackers with these crucial insights.</p>
-      </div>
+  <section class="bg-gradient-to-r from-[#2c5e91] to-[#0f2d42] text-white text-center py-20 px-6">
+    <h2 class="text-3xl font-extrabold mb-6">What Our Clients Are Saying</h2>
+    <blockquote class="text-xl italic leading-relaxed max-w-2xl mx-auto">"IronLink gave us the confidence to expand — knowing our systems were secure and our tech was aligned to our goals. They feel like an extension of our team."
+      <span class="block text-sm mt-4 font-bold">— Alex M., COO at ByteWare</span>
+    </blockquote>
+  </section>
+
+  <section class="bg-[#f8fafc] py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-[#0f2d42] mb-6">Ready to Modernize Your Infrastructure?</h2>
+      <a href="/contact" class="bg-[#0f2d42] text-white font-bold py-3 px-6 mt-4 inline-block rounded-lg hover:bg-[#1c3b58] transition">Schedule a Consultation</a>
     </div>
   </section>
+
+  <footer class="bg-[#0f2d42] text-white py-10 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-center">
+      <div>
+        <p class="text-sm">© 2025 IronLink Technologies. Veteran-owned. Built with Astro ⚡.</p>
+      </div>
+      <div class="flex gap-6 justify-end">
+        <a href="/blog" class="hover:text-gray-300">Blog</a>
+        <a href="/case-studies" class="hover:text-gray-300">Case Studies</a>
+        <a href="/contact" class="hover:text-gray-300">Contact</a>
+      </div>
+    </div>
+  </footer>
 </Layout>

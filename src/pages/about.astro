@@ -2,33 +2,86 @@
 ---
 import Layout from '../components/Layout.astro';
 ---
-<Layout title="About">
-  <section class="bg-primary text-white text-center py-20 px-6">
-    <h1 class="text-5xl font-bold mb-4">Your Trusted Tech Ally</h1>
-    <p class="text-xl max-w-3xl mx-auto">Founded by military veterans and tech professionals, IronLink Technologies brings discipline, reliability, and innovation to every project.</p>
+<Layout title="About Us | IronLink Technologies">
+  <section class="bg-gradient-to-br from-[#1e3c72] to-[#2a5298] text-white text-center py-20 px-6">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-5xl font-extrabold mb-6">Strategic IT Solutions</h1>
+      <p class="text-lg text-white/80">At IronLink Technologies, we merge defense-honed leadership with deep technical expertise to deliver enterprise solutions that scale, secure, and support your mission-critical goals. Our team is committed to providing results that are measurable, adaptable, and aligned with your business objectives. With a proven track record in infrastructure modernization, cybersecurity, and operational readiness, we empower our partners to move forward with confidence in today’s fast-paced digital world.</p>
+    </div>
   </section>
 
-  <section class="bg-white py-20 px-6">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 text-gray-700">
-      <div>
-        <h3 class="text-2xl font-semibold text-primary mb-2">💼 Our Background</h3>
-        <p>From battlefield communications to Fortune 500 systems, our founders have navigated some of the toughest technical and operational landscapes.</p>
+  <section class="bg-white py-16 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+      <div class="bg-[#f1f6fb] p-8 rounded-xl shadow">
+        <h2 class="text-2xl font-bold text-[#1e3c72] mb-3">Strategic Precision</h2>
+        <p class="text-sm text-gray-700">We deliver tailored architectures aligned to your business priorities—measured by efficiency, security, and ROI.</p>
       </div>
-      <div>
-        <h3 class="text-2xl font-semibold text-primary mb-2">🌎 Our Vision</h3>
-        <p>We believe secure, smart, and sustainable IT should be accessible to every business — no matter the size.</p>
+      <div class="bg-[#f1f6fb] p-8 rounded-xl shadow">
+        <h2 class="text-2xl font-bold text-[#1e3c72] mb-3">Security First</h2>
+        <p class="text-sm text-gray-700">From compliance to zero trust, every solution is designed with layered protection at its core.</p>
       </div>
-      <div>
-        <h3 class="text-2xl font-semibold text-primary mb-2">🔍 Core Values</h3>
-        <ul class="list-disc list-inside">
-          <li>Integrity in everything we deliver</li>
-          <li>Client-first service approach</li>
-          <li>Excellence through continuous learning</li>
-        </ul>
+      <div class="bg-[#f1f6fb] p-8 rounded-xl shadow">
+        <h2 class="text-2xl font-bold text-[#1e3c72] mb-3">Mission Execution</h2>
+        <p class="text-sm text-gray-700">We apply disciplined project execution and outcome-driven strategies to support long-term performance.</p>
       </div>
-      <div>
-        <h3 class="text-2xl font-semibold text-primary mb-2">🚀 What Sets Us Apart</h3>
-        <p>We combine military-grade discipline with enterprise-grade expertise to build IT ecosystems that stand the test of time.</p>
+    </div>
+  </section>
+
+  <section class="bg-[#edf2f7] py-20 px-6">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-6">
+        <h2 class="text-3xl font-bold text-[#1e3c72]">Our Foundation</h2>
+        <p class="text-gray-700">IronLink Technologies was founded by military leaders with a clear mission: elevate technology standards through discipline, transparency, and a commitment to excellence. Today, we empower businesses to lead with confidence in a digital-first world.</p>
+        <a href="/case-studies" class="inline-block bg-[#1e3c72] text-white font-semibold py-3 px-5 rounded hover:bg-[#2a5298] transition">See Client Impact</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md text-center">
+        <img src="/logo.png" alt="IronLink logo" class="w-3/4 mx-auto mb-4">
+        <p class="text-sm text-gray-500">Driven by values. Powered by results.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gradient-to-r from-[#2a5298] to-[#1e3c72] text-white text-center py-20 px-6">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Let's Define What's Next for Your Infrastructure</h2>
+      <p class="text-white/80 mb-6">Whether you're scaling up, locking down, or innovating forward—we’re ready to lead the charge with you.</p>
+      <a href="/contact" class="bg-white text-[#1e3c72] font-semibold py-3 px-6 inline-block rounded-lg hover:bg-gray-100 transition">Start the Conversation</a>
+    </div>
+  </section>
+
+  <section class="bg-[#f1f6fb] py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-[#1e3c72] mb-6">Core Values That Guide Us</h2>
+      <div class="grid md:grid-cols-4 gap-6 text-left">
+        <div class="bg-white p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="font-semibold text-lg text-[#1e3c72] mb-2">Integrity</h3>
+          <p class="text-sm text-gray-600">We uphold transparency and honesty in every partnership.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="font-semibold text-lg text-[#1e3c72] mb-2">Excellence</h3>
+          <p class="text-sm text-gray-600">We deliver high-quality solutions with meticulous attention to detail.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="font-semibold text-lg text-[#1e3c72] mb-2">Resilience</h3>
+          <p class="text-sm text-gray-600">We adapt and overcome challenges with discipline and speed.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="font-semibold text-lg text-[#1e3c72] mb-2">Innovation</h3>
+          <p class="text-sm text-gray-600">We engineer forward-thinking solutions for modern infrastructure needs.</p>
+        </div>
+      </div>
+        <div class="bg-white p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="font-semibold text-lg text-[#1e3c72] mb-2">Excellence</h3>
+          <p class="text-sm text-gray-600">From design to deployment, we bring an elite-level attention to detail and technical accuracy.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="font-semibold text-lg text-[#1e3c72] mb-2">Resilience</h3>
+          <p class="text-sm text-gray-600">Built from battlefield-tested experience, our team adapts rapidly to challenges and delivers under pressure.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow border border-gray-100">
+          <h3 class="font-semibold text-lg text-[#1e3c72] mb-2">Innovation</h3>
+          <p class="text-sm text-gray-600">We push beyond best practices to design systems that solve tomorrow’s problems, today.</p>
+        </div>
       </div>
     </div>
   </section>
