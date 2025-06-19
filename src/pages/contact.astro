@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <section class="max-w-xl mx-auto pt-20 pb-12 text-center">
+    <h2 class="text-4xl font-extrabold text-ironlink-accent mb-6">Contact Us</h2>
+    <form class="space-y-4" netlify>
+      <input class="w-full p-3 rounded bg-ironlink-dark text-ironlink-light border border-ironlink-accent" type="text" name="name" placeholder="Your Name" required />
+      <input class="w-full p-3 rounded bg-ironlink-dark text-ironlink-light border border-ironlink-accent" type="email" name="email" placeholder="Your Email" required />
+      <textarea class="w-full p-3 rounded bg-ironlink-dark text-ironlink-light border border-ironlink-accent" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+      <button class="bg-ironlink-accent text-ironlink-dark px-8 py-3 rounded-full font-bold hover:bg-ironlink-blue hover:text-ironlink-light transition">Send Message</button>
+    </form>
+    <div class="mt-8">
+      <div>📧 support@ironlinktech.com</div>
+      <div>📞 (915) 555-TECH</div>
+      <div>🌐 Serving El Paso, TX & surrounding areas</div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,20 @@
+---
+const links = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Contact", href: "/contact" },
+];
+---
+
+<nav class="flex items-center justify-between px-8 py-4 bg-ironlink-blue shadow-lg">
+  <div class="flex items-center space-x-2">
+    <img src="/ironlink-logo.png" alt="IronLink Logo" class="h-10 w-10" />
+    <span class="font-black text-xl tracking-tight text-ironlink-accent">IronLink</span>
+  </div>
+  <div class="flex space-x-8">
+    {links.map(link => (
+      <a href={link.href} class="font-semibold hover:text-ironlink-accent transition-colors">{link.name}</a>
+    ))}
+  </div>
+</nav>
