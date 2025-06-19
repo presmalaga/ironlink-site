@@ -9,27 +9,26 @@ const { title } = Astro.props;
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{title} | IronLink Technologies</title><meta name="description" content="IronLink Technologies offers secure, scalable IT solutions including cloud migration, cybersecurity, and managed services." />
-  <meta name="keywords" content="IT consulting, managed IT, cybersecurity, cloud migration, El Paso IT, IronLink Technologies" />
-  <meta name="author" content="IronLink Technologies" />
+  <meta name="description" content="IronLink Technologies offers elite IT consulting, infrastructure modernization, and cybersecurity services for forward-thinking organizations." />
 
-  <!-- Open Graph for social previews -->
-  <meta property="og:title" content="IronLink Technologies" />
-  <meta property="og:description" content="Secure. Scalable. Smart. Your IT ally for the modern era." />
+  <!-- Dynamic title -->
+  <title>{Astro.props.title ?? "IronLink Technologies"}</title>
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content={Astro.props.title ?? "IronLink Technologies"} />
+  <meta property="og:description" content="Strategic IT solutions built for mission-critical results. Empowering businesses with secure, scalable infrastructure." />
   <meta property="og:image" content="/logo.png" />
-  <meta property="og:url" content="https://yourdomain.com" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ironlink.vercel.app" />
 
-  <!-- Google Analytics Dummy Script (Replace with real ID when ready) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-IRON123456"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-IRON123456', {
-    page_path: window.location.pathname,
-  });
-</script>
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={Astro.props.title ?? "IronLink Technologies"} />
+  <meta name="twitter:description" content="Elite IT consulting and cybersecurity expertise. Explore our services and solutions." />
+  <meta name="twitter:image" content="/logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/logo.png" />
 </head>
 <body>
   <Navbar />
